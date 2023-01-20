@@ -111,7 +111,7 @@ body {
   color: var(--white-color-text);
 }
 
-.header .nav-list .active {
+.header .nav-list .current {
   color: var(--active-color);
 }
 
@@ -134,11 +134,12 @@ body {
 .nav-list .link:focus,
 .nav-list .link:hover {
   color: var(--active-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-contact {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .nav-contact .contact {
@@ -159,11 +160,13 @@ body {
 .nav-contact .contact:hover,
 .nav-contact .contact:focus {
   color: var(--active-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:hover .icon-contact,
 .contact:focus .icon-contact {
   fill: var(--active-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* hero */
@@ -176,6 +179,8 @@ body {
   background-position: center;
   background-size: cover;
   padding: 200px 0;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -216,31 +221,24 @@ body {
 .qualities-list {
   display: flex;
   gap: 30px;
-  text-align: center;
+
 }
 
-.box-qualities {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
 
 .section-qualities {
   padding: 94px 0;
 }
 
 
-.section-qualities .icon-list {
-  display: flex;
-  gap: 30px;
-  margin: 0 auto;
-}
 
 .section-qualities .item {
   background: #F5F4FA;
   border-radius: 4px;
-  padding: 25px 100px;
-
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  align-items: center;
 }
 
 
@@ -249,6 +247,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+  margin-top: 30px;
 }
 
 .qualities-text {
@@ -256,7 +255,7 @@ body {
   margin-top: 10px;
 }
 
-.section-qualities-pictures {
+.qualities-pictures {
   padding: 0 0 94px 0;
 }
 
@@ -276,6 +275,33 @@ body {
 
 .image-qualities {
   display: block;
+}
+
+.qualities-pictures-item {
+  position: relative;
+  width: 370px;
+  height: 294px;
+}
+
+.qualities-box {
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.qualities-top-text {
+  line-height: 1.14;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white-color-text);
+
+
+
 }
 
 /* our-team */
@@ -313,11 +339,13 @@ body {
 .our-team-link:hover,
 .our-team-link:focus {
   background-color: var(--active-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-link:hover .our-team-svg,
 .our-team-link:focus .our-team-svg {
   fill: var(--white-color-text);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -390,7 +418,7 @@ body {
   fill: var(--icon-primary-color);
 }
 
-.customers-item {
+.customers-link {
   border: 1px solid var(--icon-primary-color);
   border-radius: 4px;
   width: 170px;
@@ -401,14 +429,16 @@ body {
 }
 
 
-.customers-item:hover,
-.customers-item:focus {
+.customers-link:hover,
+.customers-link:focus {
   border: 1px solid var(--active-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-item:hover .customers-icon,
-.customers-item:focus .customers-icon {
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
   fill: var(--active-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -456,6 +486,7 @@ body {
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--active-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -482,7 +513,7 @@ body {
   display: flex;
 }
 
-.soc-icon-footer-list .item-icon-footer {
+.item-icon-footer {
   width: 44px;
   height: 44px;
 }
@@ -505,6 +536,7 @@ body {
 .soc-icon-footer-list [href]:hover,
 .soc-icon-footer-list [href]:focus {
   background-color: var(--active-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -542,7 +574,9 @@ body {
   background-color: var(--active-color);
   color: var(--white-color-text);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
+
 
 /* <!-- examples of our works --> */
 
@@ -553,14 +587,17 @@ body {
   gap: 30px;
 }
 
-.examples-item:hover .examples-top-text{
-transform: translateY(0);
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.examples-link:hover .examples-top-text,
+.examples-link:focus .examples-top-text {
+  transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.examples-item:hover {
+.examples-link:hover,
+.examples-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .examples-list img {
@@ -583,11 +620,13 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(33, 150, 243, 0.9);
 
   position: absolute;
-  height: 100%;
   top: 0;
   padding: 63px 24px;
+  height: 100%;
   transform: translateY(100%);
+  width: 100%;
   overflow: auto;
+
 
 }
 
@@ -612,4 +651,59 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--primary-text-color);
 
   margin-top: 4px;
+}
+
+
+/* MODAL WINDOW  */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: var(--primary-background-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms linear;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+
+.modal-close {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.icon-close {
+  position: absolute;
+
 }

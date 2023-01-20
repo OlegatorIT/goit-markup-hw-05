@@ -24,7 +24,7 @@
 
         <ul class="nav-list list">
           <li class="nav-list-item">
-            <a href="./index.html" class="link active">Студія</a>
+            <a href="./index.html" class="link current">Студія</a>
           </li>
           <li class="nav-list-item">
             <a href="./portfolio.html" class="link">Портфоліо</a>
@@ -52,33 +52,23 @@
     <section class="hero">
       <div class="container ">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button button">
+        <button type="button" class="hero-button button" data-modal-open>
           Замовити послугу
         </button>
       </div>
     </section>
 
     <section class="section-qualities">
-      <div class="container box-qualities">
+      <div class="container">
         <h2 class="title-invisible">Якості нашої компаніі</h2>
 
-        <ul class="icon-list list">
-          <li class="item"><svg class="icon-qualities" width="70" height="70">
-              <use href="./images/icons.svg#icon-antenna-1"></use>
-            </svg></li>
-          <li class="item"><svg class="icon-qualities" width="70" height="70">
-              <use href="./images/icons.svg#icon-clock-1"></use>
-            </svg></li>
-          <li class="item"><svg class="icon-qualities" width="70" height="70">
-              <use href="./images/icons.svg#icon-diagram-1"></use>
-            </svg></li>
-          <li class="item"><svg class="icon-qualities" width="70" height="70">
-              <use href="./images/icons.svg#icon-astronaut-1"></use>
-            </svg></li>
-        </ul>
+
 
         <ul class="list qualities-list">
           <li>
+            <div class="item"><svg class="icon-qualities" width="70" height="70">
+                <use href="./images/icons.svg#icon-antenna-1"></use>
+              </svg></div>
             <h3 class="qualities-title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="qualities-text">
               Ідейні міркування, і навіть початок повсякденної роботи з
@@ -86,6 +76,9 @@
             </p>
           </li>
           <li>
+            <div class="item"><svg class="icon-qualities" width="70" height="70">
+                <use href="./images/icons.svg#icon-clock-1"></use>
+              </svg></div>
             <h3 class="qualities-title">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="qualities-text">
               Завдання організації, особливо рамки і місце навчання кадрів
@@ -93,12 +86,18 @@
             </p>
           </li>
           <li>
+            <div class="item"><svg class="icon-qualities" width="70" height="70">
+                <use href="./images/icons.svg#icon-diagram-1"></use>
+              </svg></div>
             <h3 class="qualities-title">ПЛАНУВАННЯ</h3>
             <p class="qualities-text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
           <li>
+            <div class="item"><svg class="icon-qualities" width="70" height="70">
+                <use href="./images/icons.svg#icon-astronaut-1"></use>
+              </svg></div>
             <h3 class="qualities-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="qualities-text">
               Значимість цих проблем настільки очевидна, що реалізація
@@ -106,21 +105,33 @@
             </p>
           </li>
         </ul>
+
+
       </div>
     </section>
 
-    <section class="section-qualities-pictures">
+    <section class="qualities-pictures">
       <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="list qualities-pictures-list">
-          <li>
+          <li class="qualities-pictures-item">
             <img class="image-qualities" src="./images/box1.jpg" alt="На малюнку зоображена Розробка" width="370" />
+            <div class="qualities-box">
+              <p class="qualities-top-text">Десктопні додатки</p>
+            </div>
+
           </li>
-          <li>
+          <li class="qualities-pictures-item">
             <img class="image-qualities" src="./images/box2.jpg" alt="На малюнку зоображена Оптимізація" width="370" />
+            <div class="qualities-box">
+              <p class="qualities-top-text">Мобільні додатки</p>
+            </div>
           </li>
-          <li>
+          <li class="qualities-pictures-item">
             <img class="image-qualities" src="./images/box3.jpg" alt="На малюнку зоображений Дизайн" width="370" />
+            <div class="qualities-box">
+              <p class="qualities-top-text">Дизайнерські рішення</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -297,50 +308,47 @@
       </div>
     </section>
     <section class="regular-customers">
-      <h2 class="customers-title">Постійні клієнти </h2>
-
       <div class="container">
+        <h2 class="customers-title">Постійні клієнти </h2>
         <ul class="customers-list list">
           <li class="customers-item">
             <a href="#" class="customers-link">
-              <svg class="customers-icon" width="41" height="46.7
-">
+              <svg class="customers-icon" width="106" height="60">
                 <use href="./images/icons.svg#icon-klients1"></use>
               </svg>
             </a>
           </li>
           <li class="customers-item">
             <a href="#" class="customers-link">
-              <svg class="customers-icon" width="40" height="52">
+              <svg class="customers-icon" width="106" height="60">
                 <use href="./images/icons.svg#icon-klients2"></use>
               </svg>
             </a>
           </li>
           <li class="customers-item">
             <a href="#" class="customers-link">
-              <svg class="customers-icon" width="43.46" height="41.18">
+              <svg class="customers-icon" width="106" height="60">
                 <use href="./images/icons.svg#icon-klients3"></use>
               </svg>
             </a>
           </li>
           <li class="customers-item">
             <a href="#" class="customers-link">
-              <svg class="customers-icon" width="84.44
-" height="40.62">
+              <svg class="customers-icon" width="106" height="60">
                 <use href="./images/icons.svg#icon-klients4"></use>
               </svg>
             </a>
           </li>
           <li class="customers-item">
             <a href="#" class="customers-link">
-              <svg class="customers-icon" width="62.54" height="45.43">
+              <svg class="customers-icon" width="106" height="60">
                 <use href="./images/icons.svg#icon-klients5"></use>
               </svg>
             </a>
           </li>
           <li class="customers-item">
             <a href="#" class="customers-link">
-              <svg class="customers-icon" width="93.79" height="43.93">
+              <svg class="customers-icon" width="106" height="60">
                 <use href="./images/icons.svg#icon-klients6"></use>
               </svg>
             </a>
@@ -410,6 +418,17 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden " data-modal>
+    <div class="modal">
+      <button type="button" class="modal-close" data-modal-close>
+        <svg class="icon-close" weght="11" height="11">
+          <use href="./images/icons.svg#icon-x"></use>
+        </svg>
+
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
