@@ -353,12 +353,12 @@ body {
 
 .our-team-svg {
   fill: var(--icon-primary-color);
+  transition: fill var(--primary-duration-timing);
 }
 
 .our-team-link:hover .our-team-svg,
 .our-team-link:focus .our-team-svg {
   fill: var(--white-color-text);
-  transition: background-color var(--primary-duration-timing);
 }
 
 
@@ -434,6 +434,7 @@ body {
 
 .customers-icon {
   fill: var(--icon-primary-color);
+    transition: fill var(--primary-duration-timing);
 }
 
 .customers-link {
@@ -457,7 +458,6 @@ body {
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
   fill: var(--active-color);
-  transition: border var(--primary-duration-timing);
 }
 
 
@@ -514,8 +514,6 @@ body {
 /* social icon */
 
 .box-soc-footer {
-  display: flex;
-  flex-direction: column;
   margin-left: 70px;
 
 }
@@ -542,7 +540,6 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  display: block;
   display: flex;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
